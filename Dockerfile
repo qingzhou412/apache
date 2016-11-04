@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Bibin Wilson <bibin.w@hcl.com> 
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get -y install apache2
+RUN apt-get -y install apache2 vim
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
